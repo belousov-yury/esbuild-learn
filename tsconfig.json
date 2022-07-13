@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    //куда собираем
+    "outDir": "./build",
+    "module": "ESNext",
+
+    "sourceMap": true,
+    //запрет на any
+    "noImplicitAny": true,
+    //в какой формат компилируем
+    "target": "es6",
+    "jsx": "react-jsx",
+    //строгий режим
+    "strict": true,
+    "esModuleInterop": true,
+    "moduleResolution": "Node",
+    "allowSyntheticDefaultImports": true,
+    //обязательно при использовании esbuild
+    "isolatedModules": true
+  },
+  "ts-node": {
+    "compilerOptions": {
+      "module": "CommonJS"
+    }
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}
